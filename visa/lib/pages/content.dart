@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:visa/utils/text.dart';
 
 class Content extends StatelessWidget {
@@ -33,20 +34,53 @@ class Content extends StatelessWidget {
             ),
           ),
           Positioned(
-              top: 20,
-              left: 15,
-              child: Container(
-                height: 30,
-                child: Image.asset('assets/logo.png'),
-              )),
+            // top: 10,
+            left: 15,
+            child: Container(
+              height: 50,
+              child: Image.asset('assets/chip.png'),
+            ),
+          ),
           Positioned(
-              top: 50,
-              left: 25,
-              child: CustomText(
-                text: "It's where you want to be",
-                color: Colors.grey.shade900,
-                size: 20,
-              ))
+            top: 50,
+            left: 15,
+            child: CustomText(
+              text: "It's where you want to be",
+              color: Colors.grey.shade900,
+              size: 14,
+            ),
+          ),
+          Positioned(
+            bottom: 30,
+            left: 15,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  '1234 4563 4657 7896',
+                  style: GoogleFonts.sourceCodePro(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24,
+                      color: Colors.grey.shade700),
+                ),
+                Text(
+                  'SHUBHNESH KASHYAP',
+                  style: GoogleFonts.sourceCodePro(
+                      fontWeight: FontWeight.w600,
+                      fontSize: 20,
+                      color: Colors.grey.shade700),
+                ),
+              ],
+            ),
+          ),
+          Positioned(
+            right: 10,
+            top: 10,
+            child: Container(
+              height: 30,
+              child: Image.asset('assets/logo.png'),
+            ),
+          ),
         ],
       ),
     );

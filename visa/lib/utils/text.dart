@@ -12,7 +12,8 @@ class CustomText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: GoogleFonts.mada(color: color, fontSize: size),
+      style: GoogleFonts.mada(
+          color: color, fontSize: size, fontStyle: FontStyle.italic),
     );
   }
 }
